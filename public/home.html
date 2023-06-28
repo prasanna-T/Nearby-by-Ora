@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nearby by ORA</title>
+    <link rel="icon" type="png" href="./logo-main.png">
+    <style>
+      /* Default styles */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #298ad9;
+}
+
+#header {
+  background-color: #c55a1d;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header img {
+  height: 50px;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#search-form input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 200px;
+}
+
+#search-form button {
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background-color: #3e8e41;
+}
+
+#content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+button {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+button h2 {
+  color: #444;
+  margin-top: 0;
+}
+
+#footer {
+  background-color: #0ac27c;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+  /* Change header logo size */
+  #header img {
+    height: 30px;
+  }
+
+  /* Center align search form */
+  #search-form {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  /* Adjust button width and margin */
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Change header logo size */
+  #header img {
+    height: 25px;
+  }
+
+  /* Reduce search input width */
+  #search-form input[type="text"] {
+    width: 150px;
+  }
+
+  /* Adjust button font size */
+  button h2 {
+    font-size: 18px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <a href="http://ora.rf.gd"><img src="./logo-main.png" alt="Logo"></a>
+      <form id="search-form">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Go</button>
+      </form>
+    </div>
+    <div id="content">
+      <button><a href="./mechanics.html">
+        <h2>Find Mechanics</h2>
+        <p>Navigate to our Find Mechanics page which helps you find the nearby Mechanics for your assistance.</p>
+      </a></button>
+      <button><a href="./petrol.html">
+        <h2>Find Petrol Stations</h2>
+        <p>Navigate to our Find Mechanics page which helps you find the nearby Petrol Bunks for your assistance.</p>
+      </a></button>
+      <button><a href="./hospital.html">
+        <h2>Find Hospitals</h2>
+        <p>Navigate to our Find Mechanics page which helps you find the nearby Hospitals for your assistance.</p>
+      </a></button>
+    </div>
+    <div id="footer">
+      &copy; 2023 <strong><i>Nearby by <a href="http://ora.rf.gd">ORA</a></i></strong>
+    </div>
+  </body>
+</html>

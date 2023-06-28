@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>On Loading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="./logo-main.png">
+    
+    <!-- Splash screen CSS -->
+    <style>
+      /* Fullscreen cover */
+      .splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #FFFFFF;
+        z-index: 9999;
+      }
+      
+      /* Centered logo */
+      .splash-screen .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      /* For screens with width greater than or equal to 768px */
+@media screen and (min-width: 768px) {
+  .splash-screen {
+    font-size: 24px;
+  }
+  
+  .splash-screen .logo h1 {
+    font-size: 48px;
+  }
+}
+
+/* For screens with width less than 768px */
+@media screen and (max-width: 767px) {
+  .splash-screen {
+    font-size: 16px;
+  }
+  
+  .splash-screen .logo h1 {
+    font-size: 24px;
+  }
+}
+
+    </style>
+    
+    <!-- Redirect script after 10 seconds -->
+    <script>
+      setTimeout(function(){
+        window.location.href = "./home.html";
+      }, 4000);
+    </script>
+  </head>
+  
+  <body>
+    <!-- Splash screen content -->
+    <div class="splash-screen">
+      <div class="logo">
+        <img src="./splash.gif" alt="Logo">
+        <h1>Getting control over all the roads...</h1>
+      </div>
+    </div>
+  </body>
+</html>
